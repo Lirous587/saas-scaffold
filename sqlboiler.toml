@@ -1,0 +1,15 @@
+output = "internal/common/orm"
+wipe = true
+no-tests = true
+add-enum-types = true
+
+[psql]
+#sqlboiler psql --pkgname=orm
+dbname = "scaffold"
+host = "127.0.0.1"
+port = 15432
+user = "postgres"
+pass = "password"
+schema = "public"
+sslmode = "disable"
+# blacklist = ["migrations"] # 根据需要添加黑名单表
